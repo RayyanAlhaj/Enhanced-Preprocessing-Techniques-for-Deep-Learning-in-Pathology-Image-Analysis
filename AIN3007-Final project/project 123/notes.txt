@@ -1,0 +1,42 @@
+
+This will be a note to explain the code structure and the 
+process of this project.
+
+We will train the model with two different datasets.
+the first dataset is a dataset of patches extracted
+from slides, it is a large dataset ( contains
+around 100,000 patches). The patches will go through
+a stain normalization pipeline first, then will be
+fed to a deeplearing model.
+
+The we will extract a 1024x1024 or 2000x2000 dimentinal
+downsampled images from the provided slide dataset
+to train the model.
+
+So far we have the patches dataset, the stain refrenece selecting code,
+the stain normalizer(multiprocessed), a code to extract 512x512 patches
+from the provided slides( which we will probably not use).
+
+we have the config.py file which will contain paths etc. 
+its not implemented correctly right now but will be by the
+end of the project to make it more orgnised.
+
+
+
+The codes to actually use now are:
+
+* Stainer.py -> which will do the stain normalization, we should run this code to
+normalize all the patches so we dont need to redo the process
+
+We should also run it though the extraced downsample images from the slides.
+
+* downsample_ext.py -> to extract the images for the slides along with their masks
+
+* config.py -> to adjust the paths once and for all
+
+* We should make a main.py that concludes all the stuff mentioned.
+
+
+TODO: to start training the model after preparing all the data. 
+
+

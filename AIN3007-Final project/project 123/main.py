@@ -1,0 +1,3 @@
+from config import BATCH_SIZE, LEARNING_RATE, WSI_IMAGES_DIR
+
+print(WSI_IMAGES_DIR)

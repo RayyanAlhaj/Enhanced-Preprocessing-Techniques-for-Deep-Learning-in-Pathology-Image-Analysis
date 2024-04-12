@@ -1,0 +1,6 @@
+TODO FOR THE DEEP LEARNING ROJECT
+[] Extract patches from the wsi slides
+[] Seperate background from the patches
+[] add the background data to the patches directory
+[] mix the tissue folder data 
+[] make sure all the data is prepared in a directory
